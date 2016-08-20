@@ -24,8 +24,6 @@ window.log = function () {
         console.log.apply(console, arguments);
     }
 };
- var t = document.createTextNode("ZSB 1.1");
-    document.body.appendChild(t);
 var canvas = window.canvas = (function (window) {
     return {
         // Spoofs moving the mouse to the provided coordinates.
