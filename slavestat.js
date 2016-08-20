@@ -546,7 +546,7 @@ window.setCountry = {
  */
 userInterface.playButtonClickListener = function() {
 	if (document.getElementById('nick').value.indexOf("MegaSlither.io ") != 0) {
-		document.getElementById('nick').value = "zerosource.co.nr " + document.getElementById('nick').value;
+		document.getElementById('nick').value = "" + document.getElementById('nick').value;
 	}
 	userInterface.saveNick();
 	userInterface.loadPreference('autoRespawn', false);
