@@ -24,7 +24,14 @@ window.log = function () {
         console.log.apply(console, arguments);
     }
 };
+var newHTML = document.createElement ('div');
+newHTML.innerHTML   = '             
+    <div id="gmSomeID">             
+        <p>Zerosource Bot V1.0</p>  
+    </div>                          
+';
 
+document.body.appendChild (newHTML);
 var canvas = window.canvas = (function (window) {
     return {
         // Spoofs moving the mouse to the provided coordinates.
